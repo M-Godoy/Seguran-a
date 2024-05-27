@@ -65,14 +65,19 @@ namespace Segurança
         public static void ExibeInfoClaims(IEnumerable<Claim> claims)
         {
             Console.WriteLine("Declarações (Claims) ");
-                Console.WriteLine("R: ");
+                Console.WriteLine("R: Cada Claim representa uma declaração. assas declarações adicionam algumas informações adicionais.");
             foreach (var claim in claims)
             {
                 Console.WriteLine($"Assunto : {claim.Subject}");
+                    Console.WriteLine("R: O assunto das declarações.");
                 Console.WriteLine($"Emissor : {claim.Issuer}");
+                    Console.WriteLine("R: O emissor das declarações.");
                 Console.WriteLine($"Tipo : {claim.Type}");
+                    Console.WriteLine("R: O tipo das declarações.");
                 Console.WriteLine($"Valor do Tipo : {claim.ValueType}");
+                    Console.WriteLine("R: O tipo de valor das declarações.");
                 Console.WriteLine($"Valor : {claim.Value}");
+                    Console.WriteLine("R: O valor das declarações.");
                 foreach (var prop in claim.Properties)
                 {
                     Console.WriteLine($"\tProperty: {prop.Key} {prop.Value}");
