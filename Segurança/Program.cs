@@ -81,6 +81,7 @@ namespace Segurança
                 foreach (var prop in claim.Properties)
                 {
                     Console.WriteLine($"\tProperty: {prop.Key} {prop.Value}");
+                        Console.WriteLine("R: é a chave e o valor da propriedade. WorldAuthority é a maior autoridade, com autoridade global. NTAuthority é um nivel de identificador intermediário. LocalAuthority é o nível de identidade mais baixo, restringido a uma area pequena e ainda submetda as demais.");
                 }
                 Console.WriteLine();
             }
